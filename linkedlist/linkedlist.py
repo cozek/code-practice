@@ -30,7 +30,6 @@ class LinkedList:
         ptr = previous.next_node
         previous.next_node = None
 
-
         while ptr.next_node != None:
             print(previous.data, ptr.data)
             temp = ptr.next_node
@@ -50,10 +49,9 @@ class LinkedList:
         return string + "END"
 
 
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     data = [num for num in range(9)]
-    mylinkedlist =  LinkedList(data)
+    mylinkedlist = LinkedList(data)
     print(mylinkedlist)
     mylinkedlist.reverse()
     print(mylinkedlist)
