@@ -26,7 +26,20 @@ class LinkedList:
 
     def reverse(self):
         """Reverses the LinkedList"""
-        pass
+        previous = self.head
+        ptr = previous.next_node
+        previous.next_node = None
+
+
+        while ptr.next_node != None:
+            print(previous.data, ptr.data)
+            temp = ptr.next_node
+            ptr.next_node = previous
+            previous = ptr
+            ptr = temp
+
+        ptr.next_node = previous
+        self.head = ptr
 
     def __str__(self) -> str:
         current = self.head
@@ -37,7 +50,10 @@ class LinkedList:
         return string + "END"
 
 
+
 if __name__ == '__main__':
     data = [num for num in range(9)]
     mylinkedlist =  LinkedList(data)
+    print(mylinkedlist)
+    mylinkedlist.reverse()
     print(mylinkedlist)
