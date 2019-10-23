@@ -22,7 +22,6 @@ class LinkedList:
         while current.next_node != None:
             current = current.next_node
         current.next_node = Node(data)
-        new_node = current.next_node
 
     def reverse(self):
         """Reverses the LinkedList"""
