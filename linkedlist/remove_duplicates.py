@@ -29,6 +29,7 @@ class LinkedListSorted(LinkedList):
                 unique_ptr.next_node = ptr
                 unique_ptr = ptr
 
+
 class LinkedListUnsorted(LinkedList):
     def __init__(self, data: list):
         super().__init__(data)
@@ -69,7 +70,7 @@ class LinkedListUnsorted(LinkedList):
 
 
 if __name__ == "__main__":
-    data = [5,4,5,4,3,2,1,1,5,9,0,9]
+    data = [5, 4, 5, 4, 3, 2, 1, 1, 5, 9, 0, 9]
     mylist = LinkedListUnsorted(data)
     print(mylist)
     mylist.remove_duplicates_nobuffer()
