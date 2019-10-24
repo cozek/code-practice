@@ -41,13 +41,15 @@ class LinkedList:
 
     def __str__(self):
         current = self.head
-        def recurse(node,string = ''):
+
+        def recurse(node, string=""):
             if node.next_node == None:
-                string += 'END'
+                string += "END"
                 return string
             else:
-                string += f'{node.data} -> '
+                string += f"{node.data} -> "
                 return recurse(node.next_node, string)
+
         return recurse(current)
 
 
