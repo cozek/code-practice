@@ -16,6 +16,12 @@ class LinkedList:
             else:
                 self.append(item)
 
+    def push(self, data: int):
+        """Add item to the head of the LinkedList"""
+        new_node = Node(data)
+        new_node.next_node = self.head
+        self.head = new_node
+
     def append(self, data: int):
         """Appends data to the LinkedList as a new node"""
         current = self.head
@@ -48,9 +54,14 @@ class LinkedList:
         return string + "END"
 
 
-if __name__ == "__main__":
+def main():
     data = [num for num in range(9)]
     mylinkedlist = LinkedList(data)
     print(mylinkedlist)
-    mylinkedlist.reverse()
+    mylinkedlist.push(20)
     print(mylinkedlist)
+    mylinkedlist.append(15)
+    print(mylinkedlist)
+
+if __name__ == "__main__":
+    main()
