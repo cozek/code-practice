@@ -3,6 +3,8 @@ import stack
 
 """
 Implements code to get the min from the stack in O(1)
+However a lot of space is wasted due to keeping the min in every node.
+Not a good idea for a large stack.
 """
 
 
