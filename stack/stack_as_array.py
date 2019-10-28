@@ -3,6 +3,10 @@
 from array import array
 import math
 
+"""
+This scipt implements multiple stacks in a single array.
+"""
+
 
 class ArrayStack:
     def __init__(self, array_size: int, num_stacks: int):
