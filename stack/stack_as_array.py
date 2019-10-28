@@ -2,7 +2,6 @@
 
 from array import array
 import math
-from typing import NewType
 
 
 class ArrayStack:
@@ -35,7 +34,7 @@ class ArrayStack:
     def pop(self, stack_num: int) -> int:
         stack_num = stack_num - 1
         if self.sizes[stack_num] == 0:
-            raise ('Trying to pop empty stack!')
+            raise ("Trying to pop empty stack!")
         else:
             top_index = self.get_index(stack_num) - 1
             popped_item = self.__array_stack[top_index]
@@ -80,9 +79,8 @@ def main():
 
     print(arr_stk.top(3))
 
-    pop:int = arr_stk.pop(3)
-    print("pop",pop, arr_stk, arr_stk.sizes)
-
+    pop: int = arr_stk.pop(3)
+    print("pop", pop, arr_stk, arr_stk.sizes)
 
 
 if __name__ == "__main__":
