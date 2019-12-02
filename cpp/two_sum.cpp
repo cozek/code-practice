@@ -55,24 +55,6 @@ public:
           }
         }
       }
-      // for (auto it = my_map.begin(); it!=my_map.end(); it++) {
-      //   int diff = target - it->first;
-      //   if (my_map.find(diff) != my_map.end()){
-      //     //if diff is present
-      //     if (my_map[diff][0] != it->second[0] ){
-      //       v = {it->first,my_map[diff][0]};
-      //       break;
-      //     }
-      //     else if (my_map[diff][0] == it->second[0]
-      //              && my_map[diff].size() != 1) {
-      //       v = {my_map[diff][0],my_map[diff][1]};
-      //       break;
-      //     }
-      //     else{
-      //       continue;
-      //     }
-      //   }
-      // }
       return v;
     }
 };
