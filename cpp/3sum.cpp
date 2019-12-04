@@ -6,39 +6,6 @@ void print(std::vector<int> &v){
   std::cout << '\n';
 }
 
-class Solution {
-// public:
-//   std::vector<std::vector<int>> threeSum(std::vector<int>& v) {
-//
-//     std::vector<std::vector<int>> output;
-//     if (v.empty()){
-//       return output;
-//     }
-//     std::sort(v.begin(),v.end());
-//
-//     for (auto i=0; i<v.size()-2; i++) {
-//       int low = i+1;
-//       int high = v.size()-1;
-//       printf("%i %i %i\n",i, low, high );
-//
-//       int diff = 0 - v[i];
-//
-//       while (low < high) {
-//         int sum = v[low] + v[high];
-//         if (sum == diff){
-//           std::vector<int> set{v[i],v[low],v[high]};
-//           output.emplace_back(set);
-//         }
-//         while (v[low] == v[low+1]) {low++;}
-//         while (v[high] == v[high-1]) {high--;}
-//         low++;
-//         high--;
-//       }
-//     }
-//     return output;
-//   }
-};
-
 int main() {
   std::vector<std::vector<int>> output;
   // std::vector<int> v{-1, 0, 1, 2, -1, -4};
